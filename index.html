@@ -2,8 +2,20 @@
 <html>
 <head>
   <title>Embedded PDF</title>
+  <style>
+    #pdf-frame {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-  <iframe src="Brukermanual_Radar.pdf" width="100%" height="600px"></iframe>
+  <div id="pdf-container">
+    <iframe id="pdf-frame" src="Brukermanual_Radar.pdf"></iframe>
+  </div>
 </body>
 </html>
